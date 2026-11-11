@@ -1,0 +1,3075 @@
+(venv) C:\Users\sarah\OneDrive\Desktop\Internship\Task0005>python main.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 3470.32it/s]
+==================================================
+PDF LOADED
+==================================================
+Total Pages: 237
+Total Characters: 349104
+
+Text saved successfully!
+
+==================================================
+CHUNKING
+==================================================
+
+--------------------------------------------------
+Fixed Chunking
+--------------------------------------------------
+Chunk Count   : 436
+Average Length: 800.70
+Shortest Chunk: 302
+Longest Chunk : 937
+
+--------------------------------------------------
+Overlap Chunking
+--------------------------------------------------
+Chunk Count   : 581
+Average Length: 801.09
+Shortest Chunk: 302
+Longest Chunk : 924
+
+--------------------------------------------------
+Sentence Chunking
+--------------------------------------------------
+Chunk Count   : 4915
+Average Length: 70.03
+Shortest Chunk: 2
+Longest Chunk : 842
+
+--------------------------------------------------
+Semantic Chunking
+--------------------------------------------------
+Chunk Count   : 783
+Average Length: 444.85
+Shortest Chunk: 124
+Longest Chunk : 842
+
+--------------------------------------------------
+Recursive Chunking
+--------------------------------------------------
+Chunk Count   : 2233
+Average Length: 163.76
+Shortest Chunk: 60
+Longest Chunk : 199
+
+--------------------------------------------------
+
+--------------------------------------------------
+Parent Chunks
+--------------------------------------------------
+Chunk Count   : 218
+Average Length: 1601.39
+Shortest Chunk: 1057
+Longest Chunk : 1776
+
+--------------------------------------------------
+Child Chunks
+--------------------------------------------------
+Chunk Count   : 871
+Average Length: 400.81
+Shortest Chunk: 289
+Longest Chunk : 487
+
+Parent -> Child Mapping Example:
+[0, 1, 2, 3]
+
+==================================================
+ALL CHUNKING STRATEGIES COMPLETED
+==================================================
+Chunking functions ready!
+
+==================================================
+EMBEDDINGS + FAISS
+==================================================
+
+Fixed
+Embeddings Shape: (436, 384)
+FAISS Index Built Successfully
+
+Overlap
+Embeddings Shape: (581, 384)
+FAISS Index Built Successfully
+
+Sentence
+Embeddings Shape: (4915, 384)
+FAISS Index Built Successfully
+
+Semantic
+Embeddings Shape: (783, 384)
+FAISS Index Built Successfully
+
+Recursive
+Embeddings Shape: (2233, 384)
+FAISS Index Built Successfully
+
+ParentChild
+Embeddings Shape: (871, 384)
+FAISS Index Built Successfully
+
+==================================================
+QUERY TESTING
+==================================================
+
+
+==================================================
+ORIGINAL QUERY:
+How does Cassie first meet the mysterious boy at the diner?
+==================================================
+
+Expanded Queries:
+- How does Cassie first meet the mysterious boy at the diner?
+- How does Cassie initially encounter the mysterious boy at the diner?
+- How does Cassie meet the mysterious boy for the first time at the diner?
+- Where does Cassie first meet the mysterious boy, specifically at the diner?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 22
+Cosine: 0.7018
+
+Cassie.” Something about the way Agent Briggs said my name made
+me think that he’d known before I’d said a single word that I didn’t go by
+my full name. “I’m glad you called.”
+He waited for me to say
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 352
+Cosine: 0.6708
+
+ the kitchen. Cassie opened it. The end.”
+Briggs turned to Locke. “If the DNA comes back as a match for one
+of our victims, you’ll have to completely rework the profile. If it
+doesn’t…”
+He glanced bac
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 252
+Cosine: 0.7250
+
+So now the boy from the diner had a name.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 473
+Cosine: 0.6635
+
+“Lia.” Agent Briggs barely managed to get the word out around his
+clenched jaw. “Tell me again how you found the present.”
+I
+Lia’s eyes flashed. “I went out to get the mail. There was a package
+with C
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 696
+Cosine: 0.6431
+
+shut told me that this was an instance of the first.
+Agent Locke turned to Dean. “Care to explain to Cassie the
+difference between a killer’s MO and their signature?”
+
+----------------------------------------
+
+Chunk Index: 1529
+Cosine: 0.6418
+
+scene.”
+“You really think she’ll find something we missed?”
+Locke shot me an apologetic look. “No—but I think that if we take
+Cassie to the crime scene, the killer might follow.”
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 195
+Cosine: 0.6620
+
+’m going to start catching Cassie up to speed.” She heaved a
+larger-than-life sigh. “It’s not as glamorous as being a jaded seventeen-
+year-old boy with parental issues and a hair-gel dependency, but
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How does Cassie figure out what kind of eggs the mysterious boy likes?
+==================================================
+
+Expanded Queries:
+- How does Cassie figure out what kind of eggs the mysterious boy likes?
+- How does Cassie determine the type of eggs the mysterious boy prefers?
+- How does Cassie find out what kind of eggs the mysterious boy likes to eat?
+- What kind of eggs does Cassie discover the mysterious boy likes?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 264
+Cosine: 0.6793
+
+ the kitchen. Cassie opened it. The end.”
+Briggs turned to Locke. “If the DNA comes back as a match for one
+of our victims, you’ll have to completely rework the profile. If it
+doesn’t…”
+He glanced bac
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 14
+Cosine: 0.7063
+
+ I suddenly found myself
+wishing for a pen, just so I’d have something to hold on to. “What kind of
+eggs?” I asked.
+“You tell me.” The boy’s words caught me off guard.
+“Excuse me?”
+“Guess,” he said.
+I
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 99
+Cosine: 0.6948
+
+“What kind of
+eggs?” I asked.
+
+----------------------------------------
+
+Chunk Index: 4118
+Cosine: 0.6607
+
+Cassie.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 17
+Cosine: 0.6784
+
+“Did you decide what you’d like?” I asked. There was no getting out
+of taking his order, so I let my hair fall in my face, obscuring his view of
+it. “Three eggs,” he said, hazel eyes fixed on what he
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1389
+Cosine: 0.6314
+
+They’ll never know how close you are.
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get.
+
+----------------------------------------
+
+Chunk Index: 53
+Cosine: 0.6473
+
+wishing for a pen, just so I’d have something to hold on to. “What kind of
+eggs?” I asked.
+“You tell me.” The boy’s words caught me off guard.
+“Excuse me?”
+“Guess,” he said.
+
+----------------------------------------
+
+Chunk Index: 1238
+Cosine: 0.6232
+
+moment to come sauntering into the room. “Yes, Cassie,” she said with a
+wicked grin, “tell us why Michael has your bacon.”
+The way she said the phrase left very little question that she was
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 528
+Cosine: 0.6500
+
+ the kitchen. Cassie opened it. The end.”
+Briggs turned to Locke. “If the DNA comes back as a match for one
+of our victims, you’ll have to completely rework the profile. If it
+doesn’t…”
+He glanced bac
+
+----------------------------------------
+
+Chunk Index: 195
+Cosine: 0.6411
+
+’m going to start catching Cassie up to speed.” She heaved a
+larger-than-life sigh. “It’s not as glamorous as being a jaded seventeen-
+year-old boy with parental issues and a hair-gel dependency, but
+
+----------------------------------------
+
+Chunk Index: 21
+Cosine: 0.6603
+
+ I suddenly found myself
+wishing for a pen, just so I’d have something to hold on to. “What kind of
+eggs?” I asked.
+“You tell me.” The boy’s words caught me off guard.
+“Excuse me?”
+“Guess,” he said.
+I
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+What warning does Michael give Cassie about Agent Briggs and the Naturals program?
+==================================================
+
+Expanded Queries:
+- What warning does Michael give Cassie about Agent Briggs and the Naturals program?
+- What warning does Michael give to Cassie regarding Agent Briggs and the Naturals program?
+- What warning does Michael give Cassie concerning Agent Briggs and the Naturals program?
+- What warning does Michael give Cassie about Agent Briggs in relation to the Naturals program?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 352
+Cosine: 0.7316
+
+ If you panic, they’ll know it.”
+Michael. She was talking about Michael.
+“He doesn’t have anything to do with this,” I said.
+“I never said he did,” Locke replied, “but I’ve known Michael for
+longer th
+
+----------------------------------------
+
+Chunk Index: 65
+Cosine: 0.7334
+
+It’s nice to meet you,” I said. “Most people just call
+me Cassie.”
+“Cassie it is, then,” she replied. “Briggs tells me you’re one of mine.”
+One of hers?
+Michael filled in the blank. “A profiler.”
+“Don
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 86
+Cosine: 0.7425
+
+called out to Briggs. “Thought I’d come to greet you in person.” Without
+waiting for a reply, she turned her attention to me. “I’m Special Agent
+Lacey Locke. Briggs is my partner, and you’re Cassandra
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 3637
+Cosine: 0.7149
+
+“Cassie?” Agent Locke raised an eyebrow at me.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 496
+Cosine: 0.7529
+
+I’ll introduce you all to Agents Starmans, Vance, and Brooks. Until further
+notice, none of you will be leaving this residence, and Cassie is never
+alone.”
+Closing ranks around me wasn’t going to brin
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1241
+Cosine: 0.7391
+
+be desired. I tried to make a quick exit, but Agent Briggs stopped me in
+my tracks.
+“Cassie. A word.”
+I glanced at Michael, wondering what—if anything—Briggs knew
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 553
+Cosine: 0.7472
+
+.
+I’ll introduce you all to Agents Starmans, Vance, and Brooks. Until further
+notice, none of you will be leaving this residence, and Cassie is never
+alone.”
+Closing ranks around me wasn’t going to br
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+Why does Cassie decide to call Agent Briggs?
+==================================================
+
+Expanded Queries:
+- Why does Cassie decide to call Agent Briggs?
+- Why does Cassie choose to contact Agent Briggs?
+- Why does Cassie opt to phone Agent Briggs?
+- Why does Cassie decide to contact Agent Briggs?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 65
+Cosine: 0.7609
+
+It’s nice to meet you,” I said. “Most people just call
+me Cassie.”
+“Cassie it is, then,” she replied. “Briggs tells me you’re one of mine.”
+One of hers?
+Michael filled in the blank. “A profiler.”
+“Don
+
+----------------------------------------
+
+Chunk Index: 22
+Cosine: 0.7679
+
+Cassie.” Something about the way Agent Briggs said my name made
+me think that he’d known before I’d said a single word that I didn’t go by
+my full name. “I’m glad you called.”
+He waited for me to say
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 86
+Cosine: 0.8061
+
+called out to Briggs. “Thought I’d come to greet you in person.” Without
+waiting for a reply, she turned her attention to me. “I’m Special Agent
+Lacey Locke. Briggs is my partner, and you’re Cassandra
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 3450
+Cosine: 0.7697
+
+“We need you to make another appearance outside, Cassie.” Agent
+Briggs clearly considered that an order.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 496
+Cosine: 0.7661
+
+I’ll introduce you all to Agents Starmans, Vance, and Brooks. Until further
+notice, none of you will be leaving this residence, and Cassie is never
+alone.”
+Closing ranks around me wasn’t going to brin
+
+----------------------------------------
+
+Chunk Index: 37
+Cosine: 0.7665
+
+“This is Briggs.”
+I couldn’t pinpoint what was more disarming—the fact that this
+“Agent Briggs” had apparently given me the number to his direct line or
+the way he answered the phone, like saying “hel
+
+----------------------------------------
+
+Chunk Index: 38
+Cosine: 0.7848
+
+“Cassie.”
+“Cassie.” Something about the way Agent Briggs said my name made
+me think that he’d known before I’d said a single word that I didn’t go by
+my full name. “I’m glad you called.”
+He waited for
+
+----------------------------------------
+
+Chunk Index: 535
+Cosine: 0.7568
+
+We
+deal Cassie in. We take her with us and pay another visit to the crime
+scene.”
+“You really think she’ll find something we missed?”
+Locke shot me an apologetic look. “No—but I think that if we take
+
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1601
+Cosine: 0.7125
+
+“Can I see your phone, Cassie?” Sloane’s request distracted me from
+Briggs’s conversation. Unsure why she wanted it, I handed her my phone.
+
+----------------------------------------
+
+Chunk Index: 1796
+Cosine: 0.7622
+
+“Did you call Briggs?” she asked.
+“I tried,” I said. “He’s not picking up his phone.”
+“Cassie, I need to tell you something, and I want you to promise me
+
+----------------------------------------
+
+Chunk Index: 335
+Cosine: 0.7440
+
+waiting for a reply, she turned her attention to me. “I’m Special Agent
+Lacey Locke. Briggs is my partner, and you’re Cassandra Hobbes.”
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 538
+Cosine: 0.7770
+
+ playing
+with us. And if he’s playing with us, there’s a sizable chance that he’s
+watching us.” Agent Locke rubbed the back of her hand wearily over her
+brow. “If he’s watching us, he could have follo
+
+----------------------------------------
+
+Chunk Index: 43
+Cosine: 0.7821
+
+ someone picked up.
+“This is Briggs.”
+I couldn’t pinpoint what was more disarming—the fact that this
+“Agent Briggs” had apparently given me the number to his direct line or
+the way he answered the pho
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How does Agent Briggs explain why Cassie was chosen for the Naturals program?
+==================================================
+
+Expanded Queries:
+- How does Agent Briggs explain why Cassie was chosen for the Naturals program?
+- How does Agent Briggs explain the reason Cassie was selected for the Naturals program?
+- How does Agent Briggs describe why Cassie was picked for the Naturals program?
+- What is Agent Briggs' explanation for choosing Cassie to join the Naturals program?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 298
+Cosine: 0.7369
+
+“You really think she’ll find something we missed?”
+Locke shot me an apologetic look. “No—but I think that if we take
+Cassie to the crime scene, the killer might follow.”
+“We’re not training these kid
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 86
+Cosine: 0.7582
+
+called out to Briggs. “Thought I’d come to greet you in person.” Without
+waiting for a reply, she turned her attention to me. “I’m Special Agent
+Lacey Locke. Briggs is my partner, and you’re Cassandra
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 268
+Cosine: 0.7538
+
+“And Cassandra?”
+I wondered what Agent Briggs hoped to accomplish by using my full
+first name.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 574
+Cosine: 0.7710
+
+You need to take all three of us with you, because we might see
+something that you can’t.”
+That was the whole reason Briggs had started the Naturals program. The whole reason that he’d come to twelve-
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1196
+Cosine: 0.7207
+
+wasn’t one of them.
+W
+“Briggs is nothing if not predictable, Cassie. His job is proving that
+we can solve cold cases, not dragging us along on active ones. He’s
+
+----------------------------------------
+
+Chunk Index: 860
+Cosine: 0.7199
+
+was a program, before they started using the term Naturals, it was just
+Briggs and me. I didn’t live with Judd. The FBI brass didn’t know about
+me. Briggs brought me questions. I gave him answers.”
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 553
+Cosine: 0.7170
+
+.
+I’ll introduce you all to Agents Starmans, Vance, and Brooks. Until further
+notice, none of you will be leaving this residence, and Cassie is never
+alone.”
+Closing ranks around me wasn’t going to br
+
+----------------------------------------
+
+Chunk Index: 637
+Cosine: 0.7472
+
+ of us with you, because we might see
+something that you can’t.”
+That was the whole reason Briggs had started the Naturals program.
+The whole reason that he’d come to twelve-year-old Dean. No matter h
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+Why does Michael warn Cassie against joining the Naturals program?
+==================================================
+
+Expanded Queries:
+- Why does Michael warn Cassie against joining the Naturals program?
+- Why does Michael warn Cassie about joining the Naturals program?
+- Why does Michael advise Cassie against the Naturals program?
+- Why does Michael caution Cassie about joining the Naturals program?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 65
+Cosine: 0.6760
+
+It’s nice to meet you,” I said. “Most people just call
+me Cassie.”
+“Cassie it is, then,” she replied. “Briggs tells me you’re one of mine.”
+One of hers?
+Michael filled in the blank. “A profiler.”
+“Don
+
+----------------------------------------
+
+Chunk Index: 231
+Cosine: 0.6884
+
+“He’s never going to let you work on this,” Michael told me.
+“Is that your way of telling me that you don’t want him to know we
+hacked a stolen jump drive?” I shot back.
+Michael snorted. “Personally,
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 397
+Cosine: 0.6765
+
+, but Locke responded as if the question had been
+posed in earnest.
+“I’m suggesting that we give this killer exactly what he wants. We
+deal Cassie in. We take her with us and pay another visit to the
+
+----------------------------------------
+
+Chunk Index: 422
+Cosine: 0.6896
+
+ at all times.” Agent Briggs turned and
+started walking out of the club, a signal to the rest of us that he was so
+confident that we would follow his orders that he didn’t even need to stay
+here to se
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 2536
+Cosine: 0.6585
+
+“Cassie, who is that?” Michael had to have known the answer to that
+question, but he asked it anyway.
+
+----------------------------------------
+
+Chunk Index: 3242
+Cosine: 0.6733
+
+She didn’t say that he was the person who’d signed off on the
+Naturals program.
+
+----------------------------------------
+
+Chunk Index: 3923
+Cosine: 0.6499
+
+She was talking about Michael.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 633
+Cosine: 0.7245
+
+The idea that the UNSUB might be
+one of the people who was supposed to protect me—
+“You have to calm down,” Locke said, her voice firm. “You live in a
+house full of very perceptive people. If you pani
+
+----------------------------------------
+
+Chunk Index: 523
+Cosine: 0.7258
+
+“Cassie, this is Director Sterling.” Locke made the introduction, but
+the things she didn’t say numbered in the dozens. For instance, she didn’t say that this man was their boss. She didn’t say that h
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1133
+Cosine: 0.6901
+
+come to the program to help, not to get in the way of the FBI’s efforts.
+“Cassie,” Michael said, taking a seat against the foot of the bed and
+
+----------------------------------------
+
+Chunk Index: 1575
+Cosine: 0.6938
+
+authorization to involve Naturals in this case.
+She pushed a strand of stray hair out of her face. “Cassie, we need
+you to make a few more appearances outside. I’d have you handing out
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 613
+Cosine: 0.7071
+
+
+list of the people who approach the agents?”
+Locke nodded. “Got it in one. I’m even patching a video feed through
+to Michael and Lia back at the house so they can analyze anyone who
+approaches.”
+Appa
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How does Briggs convince Cassie that the FBI program is real?
+==================================================
+
+Expanded Queries:
+- How does Briggs convince Cassie that the FBI program is real?
+- How does Briggs persuade Cassie of the FBI program's authenticity?
+- How does Briggs make Cassie believe in the reality of the FBI program?
+- What method does Briggs use to convince Cassie that the FBI program is genuine?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 298
+Cosine: 0.7286
+
+“You really think she’ll find something we missed?”
+Locke shot me an apologetic look. “No—but I think that if we take
+Cassie to the crime scene, the killer might follow.”
+“We’re not training these kid
+
+----------------------------------------
+
+Chunk Index: 247
+Cosine: 0.7328
+
+ doesn’t trust you to
+come to that conclusion on your own, so he’s helping you get there.”
+Briggs was silent for three or four loaded seconds.
+“We can’t do this, Cassie. I understand your interest in
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 325
+Cosine: 0.7482
+
+. Her laptop will be making a trip to our tech lab to ensure that all
+traces of data have been wiped from the hard drive.”
+I hadn’t even had a chance to tell Agent Briggs my suspicions, and he
+was alr
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 3032
+Cosine: 0.7004
+
+“Cassie, are you even listening to yourself?”
+He turned to Briggs.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 440
+Cosine: 0.7695
+
+“Is it?”
+“I need you to listen to what I’m saying, Cassandra.”
+That was only the second time he’d called me by my full name since
+I’d told him I preferred Cassie. “I was up front with you about what t
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1196
+Cosine: 0.7006
+
+wasn’t one of them.
+W
+“Briggs is nothing if not predictable, Cassie. His job is proving that
+we can solve cold cases, not dragging us along on active ones. He’s
+
+----------------------------------------
+
+Chunk Index: 1678
+Cosine: 0.6768
+
+investigation wasn’t exactly covert. Briggs, Locke, and their team
+obviously knew about us, but I wasn’t convinced that the rest of the FBI
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 596
+Cosine: 0.7249
+
+“You really think she’ll find something we missed?”
+Locke shot me an apologetic look. “No—but I think that if we take
+Cassie to the crime scene, the killer might follow.”
+“We’re not training these kid
+
+----------------------------------------
+
+Chunk Index: 494
+Cosine: 0.7419
+
+ doesn’t trust you to
+come to that conclusion on your own, so he’s helping you get there.”
+Briggs was silent for three or four loaded seconds.
+“We can’t do this, Cassie. I understand your interest in
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+Why does Michael leave without introducing himself properly at the diner?
+==================================================
+
+Expanded Queries:
+- Why does Michael leave without introducing himself properly at the diner?
+- Why did Michael leave the diner without a proper introduction.
+- Why does Michael leave the diner early without introducing himself.
+- What causes Michael to leave the diner without introducing himself properly.
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 200
+Cosine: 0.6695
+
+,” I said in my best waitress voice, hoping he’d sense a false note
+under the cheerfulness in my voice and leave me to my own devices.
+“Enjoying the weather?” he asked me.
+“Something like that.”
+“I ca
+
+----------------------------------------
+
+Chunk Index: 186
+Cosine: 0.6597
+
+ pool, and for the
+first time, I registered the fact that his chest was bare. “You like Agent
+Locke. You like all of her little lessons. And you like the idea of helping
+out with real cases even more.
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 248
+Cosine: 0.6597
+
+ pool, and for the
+first time, I registered the fact that his chest was bare. “You like Agent
+Locke. You like all of her little lessons. And you like the idea of helping
+out with real cases even more.
+
+----------------------------------------
+
+Chunk Index: 267
+Cosine: 0.6705
+
+ take you anywhere.” Michael appeared on my other side and
+eased himself onto the ground next to me. “She’s too gregarious for her
+own good,” he told the man standing next to us. “Always chatting up
+c
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 4634
+Cosine: 0.6971
+
+Self-preservation was not Michael’s strong suit.
+
+----------------------------------------
+
+Chunk Index: 787
+Cosine: 0.7186
+
+Silence from Michael.
+
+----------------------------------------
+
+Chunk Index: 4860
+Cosine: 0.7010
+
+The last was from Michael.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 609
+Cosine: 0.6715
+
+This was Michael without layers. This was Michael and me—and Dean
+was standing in the doorway. “Dean.” I forced myself not to scramble backward, not to lean away
+from Michael in any way. I wouldn’t do
+
+----------------------------------------
+
+Chunk Index: 597
+Cosine: 0.6230
+
+“Underneath your ticked-off-that-
+they-won’t-leave-me-alone-and-even-more-ticked-off-that-I’m-scared-to-
+actually-be-alone exterior, I detect a slight trace of guilt, which suggests
+that you did say s
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1803
+Cosine: 0.6743
+
+Michael. She was talking about Michael.
+“He doesn’t have anything to do with this,” I said.
+“I never said he did,” Locke replied, “but I’ve known Michael for
+
+----------------------------------------
+
+Chunk Index: 140
+Cosine: 0.6790
+
+out of place here as he had at the diner, like maybe that was the point.
+“You know,” he said conversationally, “I knew you’d come.”
+I raised an eyebrow at him. “Even though you told me not to?”
+
+----------------------------------------
+
+Chunk Index: 1735
+Cosine: 0.6707
+
+from Michael in any way. I wouldn’t do that to him. The kiss might have
+started as a distraction, he might have taken advantage of the moment, but
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 408
+Cosine: 0.6509
+
+ but hadn’t breathed a word about his past.
+Suddenly, everything fell into place. The tone in Lia’s voice when
+she’d said the pictures on the stairwell were there for Dean’s benefit. The
+fact that Age
+
+----------------------------------------
+
+Chunk Index: 401
+Cosine: 0.6876
+
+ strangers. Frankly, I think she over-shares. It’s embarrassing.”
+I put the heel of my hand on Michael’s shoulder and shoved, but
+couldn’t push down the stab of gratitude I felt that I was no longer
+s
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How does Cassie first meet Lia, and what impression does Lia make?
+==================================================
+
+Expanded Queries:
+- How does Cassie first meet Lia, and what impression does Lia make?
+- How does Cassie initially encounter Lia, and what impression does Lia give.
+- How does Cassie meet Lia for the first time, and what kind of impression does Lia make on her.
+- What is the nature of Cassie's first meeting with Lia, and the impression Lia leaves on her.
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 416
+Cosine: 0.7610
+
+ see Lia in the doorway. She was dressed
+from head to toe in black, a white silk scarf tied neatly around her neck.
+She arched an eyebrow at us: cool and calm and just a little bit mocking.
+“Admit it,
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 217
+Cosine: 0.7485
+
+ so slightly.
+“But once upon a time,” Lia said, sounding less and less like herself
+with every word, “my name used to be Sadie.”
+Lia’s answer filled my mind with questions. I tried to picture her as a
+
+----------------------------------------
+
+Chunk Index: 94
+Cosine: 0.7321
+
+. If you’re
+finished trying to scare her, I’m betting she’d really like to set that bag
+down.”
+Lia shrugged. “Mi casa es su casa. Your room is through there.”
+“Your” room, I thought. Not “our” room.
+“
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1833
+Cosine: 0.7519
+
+“Your turn, Cassie.” Lia sounded pretty darned satisfied with herself.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 128
+Cosine: 0.7572
+
+“Cassie’s really broken up about not rooming with you, Lia,” Michael
+said, interpreting my facial expression with a wink. Lia pivoted to face
+him, and her lips twisted upward in a slow, sizzling grin.
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 404
+Cosine: 0.7518
+
+“Sloane, Cassie,” Lia said with a grand gesture. “Cassie, Sloane.”
+“Nice to meet you,” I said. I took a few steps forward, until I was
+
+----------------------------------------
+
+Chunk Index: 1358
+Cosine: 0.7663
+
+match, maybe you should think about asking Cassie some questions.”
+“Me?” I asked incredulously.
+“You wanted in on this case,” Lia retorted. “And now the killer
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 529
+Cosine: 0.7481
+
+ about asking Cassie some questions.”
+“Me?” I asked incredulously.
+“You wanted in on this case,” Lia retorted. “And now the killer
+contacts you out of the blue? How lucky for you.”
+I couldn’t tell if
+
+----------------------------------------
+
+Chunk Index: 167
+Cosine: 0.7487
+
+ fledgling smile froze on his face.
+“Dean Redding,” Michael said, enjoying Dean’s sudden obvious
+discomfort a little too much, “meet Cassie Hobbes.”
+“Nice to meet you,” Dean said, pulling dark eyes fr
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+Why does Briggs believe teenagers can become successful Naturals?
+==================================================
+
+Expanded Queries:
+- Why does Briggs believe teenagers can become successful Naturals?
+- Why does Briggs think teenagers can become successful Naturals?
+- Why does Briggs believe teens can become successful Naturals?
+- Why does Briggs think teens can become successful Naturals?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 390
+Cosine: 0.6330
+
+ less than a second to think of an answer, but growing up the
+daughter of a woman who made her living by pretending to be psychic
+hadn’t just taught me the BPEs. For better or worse, I’d learned to pu
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 520
+Cosine: 0.6330
+
+ less than a second to think of an answer, but growing up the
+daughter of a woman who made her living by pretending to be psychic
+hadn’t just taught me the BPEs. For better or worse, I’d learned to pu
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 379
+Cosine: 0.6887
+
+“I’m seventeen.”
+“Natural aptitudes, like yours, peak in the teen years.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 572
+Cosine: 0.6725
+
+Because Naturals
+work so well as a team, and you’d hate to throw that off?”
+Agent Briggs closed the space between us and brought his face down
+level with mine. “Do you really think that little of me?”
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1634
+Cosine: 0.6912
+
+something that you can’t.”
+That was the whole reason Briggs had started the Naturals program.
+The whole reason that he’d come to twelve-year-old Dean. No matter how
+
+----------------------------------------
+
+Chunk Index: 1259
+Cosine: 0.6931
+
+qualms about throwing teenagers into the thick of things. Briggs—
+personally—did not.
+“So what you’re saying is that using the twelve-year-old son of a
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 637
+Cosine: 0.6675
+
+ of us with you, because we might see
+something that you can’t.”
+That was the whole reason Briggs had started the Naturals program.
+The whole reason that he’d come to twelve-year-old Dean. No matter h
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How did Cassie's mother teach her to understand people, and how do those lessons continue to influence Cassie?
+==================================================
+
+Expanded Queries:
+- How did Cassie's mother teach her to understand people, and how do those lessons continue to influence Cassie?
+- How did Cassie's mother instruct her to comprehend people, and what impact do those lessons have on Cassie now?
+- What methods did Cassie's mother use to teach her about understanding people, and how have those lessons affected Cassie?
+- In what ways did Cassie's mother educate her to understand others, and how do those early lessons continue to shape Cassie?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 176
+Cosine: 0.6861
+
+ of the theater. Under normal circumstance, my
+mother wouldn’t have just let a killer waltz her out the door—but she
+might have done anything to keep her assailant away from me.
+“Cassie?” Agent Locke
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 136
+Cosine: 0.6518
+
+. “I’m sure this isn’t what you were expecting for your first day, Cassie,
+but I wanted to get a sense of what you can do with normal people before
+we dive into the abnormal end of the spectrum.”
+Dean
+
+----------------------------------------
+
+Chunk Index: 361
+Cosine: 0.6667
+
+ are.
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get.
+OceanofPDF.com
+wo days later, the hair f
+
+----------------------------------------
+
+Chunk Index: 44
+Cosine: 0.6649
+
+ figure things out, how you
+figure people out, Cassie, but the difference between you and the rest of
+the world is that to explain how you just figured out that I’d rather get a
+bloody nose on the bas
+
+----------------------------------------
+
+Chunk Index: 495
+Cosine: 0.6579
+
+With no warning whatsoever, she hit me again. This time, she caught
+me before I fell.
+“You’re just like your mother,” she said. And then she tightened her
+grip on my arm, forcing me to stand straight.
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 3013
+Cosine: 0.7233
+
+But Cassie—she’s going to know everything.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 667
+Cosine: 0.7187
+
+Do you understand me?”
+I understood that the words she was saying were things that someone
+had probably once said to her. I understood that if I asked her how she
+knew my mother, she’d hit me again an
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1389
+Cosine: 0.7096
+
+They’ll never know how close you are.
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get.
+
+----------------------------------------
+
+Chunk Index: 1903
+Cosine: 0.6783
+
+knew my mother, she’d hit me again and again.
+I understood that I might not get back up.
+“I expect an answer when I talk to you, Cassie. You weren’t raised in
+a barn.”
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 744
+Cosine: 0.6604
+
+ I talk to you, Cassie. You weren’t raised in
+a barn.”
+“I understand,” I said, filing away her choice of words, the almost
+maternal undertone to her words. I’d assumed that the UNSUB was male.
+I’d ass
+
+----------------------------------------
+
+Chunk Index: 352
+Cosine: 0.6548
+
+ of the theater. Under normal circumstance, my
+mother wouldn’t have just let a killer waltz her out the door—but she
+might have done anything to keep her assailant away from me.
+“Cassie?” Agent Locke
+
+----------------------------------------
+
+Chunk Index: 758
+Cosine: 0.6479
+
+,” she pleaded, the words escaping cracked and bleeding lips.
+“You kill me, before she does.”
+I knelt there, frozen, and Locke lost it. She morphed from a teacher
+observing her star pupil into an angr
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+Compare Cassie's talent for reading people with Michael's talent for reading emotions.
+==================================================
+
+Expanded Queries:
+- Compare Cassie's talent for reading people with Michael's talent for reading emotions.
+- Compare Cassie's ability to read people with Michael's ability to read emotions.
+- Compare the talent Cassie has for reading people to Michael's talent for reading emotions.
+- Compare Cassie's skill at reading people to Michael's skill at reading emotions.
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 272
+Cosine: 0.7070
+
+ do you think?” Locke asked.
+Briggs narrowed his eyes, like he couldn’t believe she was using this
+as a teaching opportunity, but I answered the question anyway.
+“I think this UNSUB wants to kill me,
+
+----------------------------------------
+
+Chunk Index: 65
+Cosine: 0.7101
+
+It’s nice to meet you,” I said. “Most people just call
+me Cassie.”
+“Cassie it is, then,” she replied. “Briggs tells me you’re one of mine.”
+One of hers?
+Michael filled in the blank. “A profiler.”
+“Don
+
+----------------------------------------
+
+Chunk Index: 414
+Cosine: 0.7095
+
+ singing was to a
+person with perfect pitch.
+“No one can make sense of a tragedy like this.”
+The lawyer was young, male, intelligent, precise—and when he’d
+said those words, he’d been lying. There was
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 363
+Cosine: 0.6992
+
+ he wants to
+kill me yet.”
+“This is insane.” Michael had that look on his face—the one that told
+me he wanted to hit someone. “Cassie, are you even listening to yourself?”
+He turned to Briggs. “She’s
+
+----------------------------------------
+
+Chunk Index: 107
+Cosine: 0.7145
+
+wardrobe, the precision with which she’d divided our closet in two.
+“Agent Briggs said that someone here was a Natural with numbers and
+probabilities.”
+“Sloane’s absolutely dangerous with anything num
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 4621
+Cosine: 0.7066
+
+Michael read facial
+expressions as easily as other people read words.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 390
+Cosine: 0.7218
+
+“I
+think that’s a little bit of a higher priority than training us is.”
+“Sloane,” Michael said suddenly, drawing out her name and
+narrowing his eyes. “Nothing,” Sloane replied quickly. “Nothing what?”
+
+----------------------------------------
+
+Chunk Index: 63
+Cosine: 0.7239
+
+“You can take as much time as you need to think about it, Cassie, but
+what I’m offering you is a once-in-a-lifetime chance. Our program is one
+of a kind, and it has the potential to turn Naturals—peop
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 961
+Cosine: 0.7155
+
+Locke. You like all of her little lessons. And you like the idea of helping
+out with real cases even more.”
+I didn’t say anything. Clearly, Michael was capable of having this
+
+----------------------------------------
+
+Chunk Index: 2115
+Cosine: 0.7154
+
+disappeared around the same time Mackenzie had. Unlike Michael’s
+ability, my skill set wasn’t limited to facial expressions or posture. Given a
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 130
+Cosine: 0.7184
+
+It’s nice to meet you,” I said. “Most people just call
+me Cassie.”
+“Cassie it is, then,” she replied. “Briggs tells me you’re one of mine.”
+One of hers?
+Michael filled in the blank. “A profiler.”
+“Don
+
+----------------------------------------
+
+Chunk Index: 421
+Cosine: 0.7200
+
+
+I shrugged. “Both?”
+Michael nodded, as if my answer were a foregone conclusion. “You
+okay?”
+“You’re the emotion reader,” I said. “You tell me.”
+He took that as an invitation to come closer. He stoppe
+
+----------------------------------------
+
+Chunk Index: 430
+Cosine: 0.7124
+
+ mouth to answer, but
+Sloane’s eyes widened as she took in the evidence.
+“Fireworks?” she said, folding her arms over her middle. “In the
+foyer?”
+Michael shrugged. “Cassie needed a distraction, and I
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How do Michael's warnings and Briggs's promises create different views of the Naturals program?
+==================================================
+
+Expanded Queries:
+- How do Michael's warnings and Briggs's promises create different views of the Naturals program?
+- How do Michael's warnings and Briggs's promises shape different perspectives on the Naturals program?
+- How do the warnings from Michael and the promises from Briggs impact views of the Naturals program?
+- What views of the Naturals program emerge from Michael's warnings and Briggs's promises?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 412
+Cosine: 0.6706
+
+ had a general disdain for authority.
+Two months earlier, he’d followed me out of the house knowing that I was
+the subject of a serial killer’s obsession, and he’d gotten shot for his
+trouble.
+Twice.
+
+
+----------------------------------------
+
+Chunk Index: 95
+Cosine: 0.6652
+
+ of universal
+phenomenological experiences.’”
+Lia exited the refrigerator with empty hands, shut the door, and
+opened the freezer. “Poor baby,” she told Michael. “I’ve been here for
+almost three years
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 131
+Cosine: 0.6696
+
+?” she asked, eyeing Lia’s pajamas. Lia shrugged, but
+something about Agent Locke’s presence seemed to subdue her. Within
+minutes, my fellow Naturals had scattered. Neither Lia nor Michael
+seemed anxi
+
+----------------------------------------
+
+Chunk Index: 422
+Cosine: 0.6902
+
+ at all times.” Agent Briggs turned and
+started walking out of the club, a signal to the rest of us that he was so
+confident that we would follow his orders that he didn’t even need to stay
+here to se
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1844
+Cosine: 0.6994
+
+“Before there
+was a program, before they started using the term Naturals, it was just
+Briggs and me.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 536
+Cosine: 0.7038
+
+“So far,
+your Naturals have delivered one.”
+I could feel the dynamics in the room shifting. Agent Briggs didn’t
+want to risk something happening to one of his precious Naturals. The
+director was skept
+
+----------------------------------------
+
+Chunk Index: 64
+Cosine: 0.6994
+
+In the two minutes
+we’d spent walking to this office, Michael had come closer to figuring out
+what was going on inside my head than anyone I’d ever met. “And Michael.” As he spoke, Agent Briggs’s face
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 860
+Cosine: 0.7134
+
+was a program, before they started using the term Naturals, it was just
+Briggs and me. I didn’t live with Judd. The FBI brass didn’t know about
+me. Briggs brought me questions. I gave him answers.”
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 637
+Cosine: 0.6889
+
+ of us with you, because we might see
+something that you can’t.”
+That was the whole reason Briggs had started the Naturals program.
+The whole reason that he’d come to twelve-year-old Dean. No matter h
+
+----------------------------------------
+
+Chunk Index: 118
+Cosine: 0.6847
+
+ son in exchange for
+immunity, I wasn’t sure.
+I didn’t ask.
+Instead, I stuck to safer ground. “What’s it like? The program?”
+“I’ve only been there for a few months,” Michael said. “Briggs
+sprung me to
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How do Cassie's Italian relatives and Agent Briggs represent different possible futures for her?
+==================================================
+
+Expanded Queries:
+- How do Cassie's Italian relatives and Agent Briggs represent different possible futures for her?
+- How do Cassie's Italian relatives and Agent Briggs symbolize different potential futures for Cassie?
+- How do Cassie's Italian relatives and Agent Briggs embody different possible paths for Cassie's future?
+- How do Cassie's Italian relatives and Agent Briggs personify different potential outcomes for Cassie's life?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 376
+Cosine: 0.6795
+
+Before I realized how very like me you were. I
+knew you were Lorelai’s daughter. Of course I knew—I was the one who
+flagged you in the system. I spoon-fed you to Briggs. I brought you here,
+because yo
+
+----------------------------------------
+
+Chunk Index: 264
+Cosine: 0.6662
+
+ the kitchen. Cassie opened it. The end.”
+Briggs turned to Locke. “If the DNA comes back as a match for one
+of our victims, you’ll have to completely rework the profile. If it
+doesn’t…”
+He glanced bac
+
+----------------------------------------
+
+Chunk Index: 298
+Cosine: 0.6726
+
+“You really think she’ll find something we missed?”
+Locke shot me an apologetic look. “No—but I think that if we take
+Cassie to the crime scene, the killer might follow.”
+“We’re not training these kid
+
+----------------------------------------
+
+Chunk Index: 22
+Cosine: 0.6564
+
+Cassie.” Something about the way Agent Briggs said my name made
+me think that he’d known before I’d said a single word that I didn’t go by
+my full name. “I’m glad you called.”
+He waited for me to say
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 49
+Cosine: 0.7197
+
+ recruited, Cassie. There are
+work-arounds.”
+Clearly, he had not met my Nonna.
+“Five years ago, custody of Cassandra Hobbes was remitted to her
+biological father, one Vincent Battaglia, United States
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 248
+Cosine: 0.6629
+
+“Cassie.”
+“Cassie.” Something about the way Agent Briggs said my name made
+me think that he’d known before I’d said a single word that I didn’t go by
+my full name.
+
+----------------------------------------
+
+Chunk Index: 268
+Cosine: 0.6753
+
+“And Cassandra?”
+I wondered what Agent Briggs hoped to accomplish by using my full
+first name.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 66
+Cosine: 0.6966
+
+“Five years ago, custody of Cassandra Hobbes was remitted to her
+biological father, one Vincent Battaglia, United States Air Force.” Agent
+Briggs paused. “Fourteen months after your appearance in his
+
+----------------------------------------
+
+Chunk Index: 486
+Cosine: 0.7053
+
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get. OceanofPDF.com
+wo days later, the hair from th
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1389
+Cosine: 0.6744
+
+They’ll never know how close you are.
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get.
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 528
+Cosine: 0.6593
+
+ the kitchen. Cassie opened it. The end.”
+Briggs turned to Locke. “If the DNA comes back as a match for one
+of our victims, you’ll have to completely rework the profile. If it
+doesn’t…”
+He glanced bac
+
+----------------------------------------
+
+Chunk Index: 538
+Cosine: 0.6747
+
+ playing
+with us. And if he’s playing with us, there’s a sizable chance that he’s
+watching us.” Agent Locke rubbed the back of her hand wearily over her
+brow. “If he’s watching us, he could have follo
+
+----------------------------------------
+
+Chunk Index: 439
+Cosine: 0.6606
+
+’d
+come to the program to help, not to get in the way of the FBI’s efforts.
+“Cassie,” Michael said, taking a seat against the foot of the bed and
+stretching his legs out in front of him. “Is Briggs th
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How does Cassie's missing mother influence both her personality and her decision to join the Naturals?
+==================================================
+
+Expanded Queries:
+- How does Cassie's missing mother influence both her personality and her decision to join the Naturals?
+- How does Cassie's mother being missing affect her personality and decision to join the Naturals?
+- How does the disappearance of Cassie's mother impact her personality and choice to join the Naturals?
+- What role does Cassie's missing mother play in shaping her personality and her decision to join the Naturals?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 298
+Cosine: 0.6891
+
+“You really think she’ll find something we missed?”
+Locke shot me an apologetic look. “No—but I think that if we take
+Cassie to the crime scene, the killer might follow.”
+“We’re not training these kid
+
+----------------------------------------
+
+Chunk Index: 372
+Cosine: 0.7029
+
+ I talk to you, Cassie. You weren’t raised in
+a barn.”
+“I understand,” I said, filing away her choice of words, the almost
+maternal undertone to her words. I’d assumed that the UNSUB was male.
+I’d ass
+
+----------------------------------------
+
+Chunk Index: 382
+Cosine: 0.6988
+
+ the fog in her brain, bring her back to the here and now. “Left
+where?”
+L
+Locke stopped. She hesitated. She looked at me. She saw me. She got
+ahold of herself, and with her voice still full of venom,
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 361
+Cosine: 0.7168
+
+ are.
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get.
+OceanofPDF.com
+wo days later, the hair f
+
+----------------------------------------
+
+Chunk Index: 501
+Cosine: 0.7251
+
+ you
+were a Natural at only one thing, you also said that you couldn’t tell me
+about it until I was twenty-one.”
+Locke looked genuinely pleased that I remembered. “That was before
+I knew you,” she sai
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 674
+Cosine: 0.6748
+
+“The devil’s in the details, Cassie.
+
+----------------------------------------
+
+Chunk Index: 4118
+Cosine: 0.6616
+
+Cassie.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 486
+Cosine: 0.7290
+
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get. OceanofPDF.com
+wo days later, the hair from th
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1389
+Cosine: 0.7045
+
+They’ll never know how close you are.
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get.
+
+----------------------------------------
+
+Chunk Index: 1575
+Cosine: 0.6934
+
+authorization to involve Naturals in this case.
+She pushed a strand of stray hair out of her face. “Cassie, we need
+you to make a few more appearances outside. I’d have you handing out
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 744
+Cosine: 0.6825
+
+ I talk to you, Cassie. You weren’t raised in
+a barn.”
+“I understand,” I said, filing away her choice of words, the almost
+maternal undertone to her words. I’d assumed that the UNSUB was male.
+I’d ass
+
+----------------------------------------
+
+Chunk Index: 540
+Cosine: 0.6810
+
+gift you sent sweet little Cassandra Hobbes was the real thing.
+The pathetic little slut lying lifeless on the pavement is just a piece of
+the plan. You abandoned her body at dawn, knowing that it wou
+
+----------------------------------------
+
+Chunk Index: 533
+Cosine: 0.6760
+
+ the room turned to Dean. Normally, he stood
+and walked like someone who wanted to disappear into the woodwork, but
+today, his shoulders were back, his jaw set.
+“I read the file. I profiled it. And I
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How do Cassie's first interactions with the other Naturals make her feel out of place?
+==================================================
+
+Expanded Queries:
+- How do Cassie's first interactions with the other Naturals make her feel out of place?
+- What are Cassie's initial impressions of the other Naturals that make her feel like an outsider?
+- How do the other Naturals initially interact with Cassie to make her feel like she doesn't belong?
+- What are Cassie's feelings after her first encounters with the other Naturals that make her feel out of place?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 209
+Cosine: 0.7220
+
+ Cassie?” Dean finally turned back
+around to face me. “Just tell me, and I’ll say it.”
+“I just want you to talk to me.”
+Dean’s fingers curled into fists at his sides. I could barely see his eyes
+behin
+
+----------------------------------------
+
+Chunk Index: 372
+Cosine: 0.7053
+
+ I talk to you, Cassie. You weren’t raised in
+a barn.”
+“I understand,” I said, filing away her choice of words, the almost
+maternal undertone to her words. I’d assumed that the UNSUB was male.
+I’d ass
+
+----------------------------------------
+
+Chunk Index: 103
+Cosine: 0.6804
+
+ that she was. I said as
+much out loud.
+“What else can you tell me?” Agent Locke asked.
+My gut told me that Agent Locke didn’t want details. She wanted the
+big picture.
+Behavior. Personality. Environm
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 501
+Cosine: 0.7330
+
+ you
+were a Natural at only one thing, you also said that you couldn’t tell me
+about it until I was twenty-one.”
+Locke looked genuinely pleased that I remembered. “That was before
+I knew you,” she sai
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 3321
+Cosine: 0.7108
+
+We
+deal Cassie in.
+
+----------------------------------------
+
+Chunk Index: 674
+Cosine: 0.6910
+
+“The devil’s in the details, Cassie.
+
+----------------------------------------
+
+Chunk Index: 1734
+Cosine: 0.7028
+
+“Cassie.
+
+----------------------------------------
+
+Chunk Index: 4118
+Cosine: 0.7156
+
+Cassie.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 128
+Cosine: 0.7047
+
+“Cassie’s really broken up about not rooming with you, Lia,” Michael
+said, interpreting my facial expression with a wink. Lia pivoted to face
+him, and her lips twisted upward in a slow, sizzling grin.
+
+----------------------------------------
+
+Chunk Index: 207
+Cosine: 0.6927
+
+On some level, I knew that this was a dream, knew what I would find
+when I opened that door—but I couldn’t stop. My body felt numb from the
+waist down. My smile hurt. I laid my hand flat against the m
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 908
+Cosine: 0.7014
+
+might have done anything to keep her assailant away from me.
+“Cassie?” Agent Locke said, snapping me back to the present.
+“Right,” I said.
+She narrowed her eyes. “Right what?”
+
+----------------------------------------
+
+Chunk Index: 1575
+Cosine: 0.7021
+
+authorization to involve Naturals in this case.
+She pushed a strand of stray hair out of her face. “Cassie, we need
+you to make a few more appearances outside. I’d have you handing out
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 753
+Cosine: 0.7004
+
+. “You were mine,
+Cassie. You belonged with me. I thought I could wait until you were older,
+until you were ready, but you’re ready now.”
+She pushed Genevieve roughly down to her knees. The girl colla
+
+----------------------------------------
+
+Chunk Index: 582
+Cosine: 0.6824
+
+ presence, and he looked at me like I was a child.
+“Cassie, this is Director Sterling.” Locke made the introduction, but
+the things she didn’t say numbered in the dozens.
+For instance, she didn’t say
+
+----------------------------------------
+
+Chunk Index: 167
+Cosine: 0.7263
+
+ fledgling smile froze on his face.
+“Dean Redding,” Michael said, enjoying Dean’s sudden obvious
+discomfort a little too much, “meet Cassie Hobbes.”
+“Nice to meet you,” Dean said, pulling dark eyes fr
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How do the alternating 'YOU' chapters help the reader understand the killer's personality?
+==================================================
+
+Expanded Queries:
+- How do the alternating 'YOU' chapters help the reader understand the killer's personality?
+- How do the alternating 'YOU' chapters contribute to the reader's understanding of the killer's personality?
+- How do the 'YOU' chapters help readers gain insight into the killer's personality through alternation?
+- What role do the 'YOU' chapters play in revealing the killer's personality to the reader through their alternating narrative?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 174
+Cosine: 0.7800
+
+ ahold of their class schedules.”
+Agent Locke nodded. “Occasionally the victims may be serving as a
+substitute for someone in the UNSUB’s life. Some killers kill their first
+girlfriend or their wife o
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 232
+Cosine: 0.7800
+
+ ahold of their class schedules.”
+Agent Locke nodded. “Occasionally the victims may be serving as a
+substitute for someone in the UNSUB’s life. Some killers kill their first
+girlfriend or their wife o
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1946
+Cosine: 0.6955
+
+Either way, you
+react.”
+W
+“We don’t have the luxury of knowing every last detail about the
+UNSUB’s personality,” Agent Locke cut in, “but the victim’s personality
+and behavior account for half of the
+
+----------------------------------------
+
+Chunk Index: 1500
+Cosine: 0.7141
+
+It refers to the method used by the killer.
+
+----------------------------------------
+
+Chunk Index: 2526
+Cosine: 0.7048
+
+“I think the killer did.”
+You kill psychics.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 656
+Cosine: 0.7310
+
+She doesn’t
+understand why you shot Michael. She doesn’t understand who you are or
+what she is to you. But Dean does. You see the exact moment that everything falls into
+place for the boy you trained.
+
+----------------------------------------
+
+Chunk Index: 412
+Cosine: 0.7277
+
+“Are you saying what I think
+you’re saying?”
+I was saying that Briggs and Locke were tracking an UNSUB who
+killed women with red hair and people who claimed to be psychic. It could
+have been a coincid
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 888
+Cosine: 0.7262
+
+beginning, back to the first.
+The palm reader’s eyes flicker open. Her hands are bound. She sees
+you. Then she sees the hair dye, the knife in your left hand, and she
+realizes—
+You are the monster.
+
+----------------------------------------
+
+Chunk Index: 910
+Cosine: 0.7256
+
+that walking through a crime scene from a victim’s perspective can tell
+you a lot about the killer. Say you go into a victim’s house and you find
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 349
+Cosine: 0.7438
+
+ for the
+right words. “There’s a give-and-take between you and the people you kill.
+You choose them. You trap them. Maybe they fight. Maybe they run. Some
+try to reason with you, some say things that
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How does the novel use first impressions to mislead both Cassie and the reader about different characters?
+==================================================
+
+Expanded Queries:
+- How does the novel use first impressions to mislead both Cassie and the reader about different characters?
+- How does the novel utilize first impressions to deceive both Cassie and the reader regarding various characters?
+- How does the novel employ first impressions to mislead Cassie and the reader about the nature of different characters?
+- How does the novel use initial impressions to mislead both Cassie and the reader about certain characters in the story?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 80
+Cosine: 0.6950
+
+ undergo surgery, and they’re significantly more likely to wake up on the
+table.”
+I got the distinct feeling that this was Sloane’s version of “hello,” and
+suddenly, everything clicked into place: the
+
+----------------------------------------
+
+Chunk Index: 65
+Cosine: 0.6995
+
+It’s nice to meet you,” I said. “Most people just call
+me Cassie.”
+“Cassie it is, then,” she replied. “Briggs tells me you’re one of mine.”
+One of hers?
+Michael filled in the blank. “A profiler.”
+“Don
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 94
+Cosine: 0.6936
+
+. If you’re
+finished trying to scare her, I’m betting she’d really like to set that bag
+down.”
+Lia shrugged. “Mi casa es su casa. Your room is through there.”
+“Your” room, I thought. Not “our” room.
+“
+
+----------------------------------------
+
+Chunk Index: 395
+Cosine: 0.6946
+
+ the card say?” Locke asked. “The picture is only part of
+the message.”
+Briggs looked at me, then at the director. Then he flipped the card
+around so that we could read it for ourselves.
+CASSIE—WON’T
+
+----------------------------------------
+
+Chunk Index: 86
+Cosine: 0.6984
+
+called out to Briggs. “Thought I’d come to greet you in person.” Without
+waiting for a reply, she turned her attention to me. “I’m Special Agent
+Lacey Locke. Briggs is my partner, and you’re Cassandra
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 3637
+Cosine: 0.6974
+
+“Cassie?” Agent Locke raised an eyebrow at me.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 118
+Cosine: 0.6963
+
+“It’s nice to meet you,” I said. “Most people just call
+me Cassie.”
+“Cassie it is, then,” she replied. “Briggs tells me you’re one of mine.”
+One of hers? Michael filled in the blank. “A profiler.”
+“Do
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 888
+Cosine: 0.6600
+
+beginning, back to the first.
+The palm reader’s eyes flicker open. Her hands are bound. She sees
+you. Then she sees the hair dye, the knife in your left hand, and she
+realizes—
+You are the monster.
+
+----------------------------------------
+
+Chunk Index: 908
+Cosine: 0.6746
+
+might have done anything to keep her assailant away from me.
+“Cassie?” Agent Locke said, snapping me back to the present.
+“Right,” I said.
+She narrowed her eyes. “Right what?”
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 529
+Cosine: 0.6762
+
+ about asking Cassie some questions.”
+“Me?” I asked incredulously.
+“You wanted in on this case,” Lia retorted. “And now the killer
+contacts you out of the blue? How lucky for you.”
+I couldn’t tell if
+
+----------------------------------------
+
+Chunk Index: 430
+Cosine: 0.6744
+
+ mouth to answer, but
+Sloane’s eyes widened as she took in the evidence.
+“Fireworks?” she said, folding her arms over her middle. “In the
+foyer?”
+Michael shrugged. “Cassie needed a distraction, and I
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How does Cassie's idea of family change during the early part of the novel?
+==================================================
+
+Expanded Queries:
+- How does Cassie's idea of family change during the early part of the novel?
+- How does Cassie's concept of family evolve in the early stages of the novel?
+- How does the early part of the novel portray Cassie's changing perception of family?
+- What changes occur in Cassie's understanding of family during the novel's early portion?
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 376
+Cosine: 0.7057
+
+Before I realized how very like me you were. I
+knew you were Lorelai’s daughter. Of course I knew—I was the one who
+flagged you in the system. I spoon-fed you to Briggs. I brought you here,
+because yo
+
+----------------------------------------
+
+Chunk Index: 372
+Cosine: 0.7043
+
+ I talk to you, Cassie. You weren’t raised in
+a barn.”
+“I understand,” I said, filing away her choice of words, the almost
+maternal undertone to her words. I’d assumed that the UNSUB was male.
+I’d ass
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 501
+Cosine: 0.7189
+
+ you
+were a Natural at only one thing, you also said that you couldn’t tell me
+about it until I was twenty-one.”
+Locke looked genuinely pleased that I remembered. “That was before
+I knew you,” she sai
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 4298
+Cosine: 0.6860
+
+It was
+supposed to be us, Cassie.
+
+----------------------------------------
+
+Chunk Index: 4118
+Cosine: 0.6661
+
+Cassie.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 675
+Cosine: 0.6601
+
+I spoon-fed you to Briggs. I brought you here,
+because you were Lorelai’s, but once I started working with you…” Her
+eyes were alight with a strange glow, like a blushing bride’s or a pregnant
+lady’s,
+
+----------------------------------------
+
+Chunk Index: 486
+Cosine: 0.6791
+
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get. OceanofPDF.com
+wo days later, the hair from th
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 1389
+Cosine: 0.6817
+
+They’ll never know how close you are.
+But Cassie—she’s going to know everything. The two of you are
+connected. Cassie is her mother’s daughter—and that’s as close as you’re
+ever going to get.
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 744
+Cosine: 0.6824
+
+ I talk to you, Cassie. You weren’t raised in
+a barn.”
+“I understand,” I said, filing away her choice of words, the almost
+maternal undertone to her words. I’d assumed that the UNSUB was male.
+I’d ass
+
+----------------------------------------
+
+Chunk Index: 753
+Cosine: 0.6686
+
+. “You were mine,
+Cassie. You belonged with me. I thought I could wait until you were older,
+until you were ready, but you’re ready now.”
+She pushed Genevieve roughly down to her knees. The girl colla
+
+----------------------------------------
+
+
+==================================================
+ORIGINAL QUERY:
+How do the Naturals' unique talents help them solve problems while also creating challenges in their personal lives?
+==================================================
+
+Expanded Queries:
+- How do the Naturals' unique talents help them solve problems while also creating challenges in their personal lives?
+- How do the Naturals utilize their exceptional abilities to solve problems while facing personal challenges.
+- How do the unique talents of the Naturals aid in solving problems and create difficulties in their personal lives.
+- What role do the Naturals' special gifts play in solving problems and generating personal struggles.
+
+
+Fixed
+
+Unique Retrieved Chunks:
+
+Chunk Index: 35
+Cosine: 0.5997
+
+ into something extraordinary, something that you can
+use to do an incredible amount of good in this world.”
+Part of me wanted to laugh at him, to walk out of the room, to forget
+that any of this had
+
+----------------------------------------
+
+Chunk Index: 95
+Cosine: 0.5642
+
+ of universal
+phenomenological experiences.’”
+Lia exited the refrigerator with empty hands, shut the door, and
+opened the freezer. “Poor baby,” she told Michael. “I’ve been here for
+almost three years
+
+----------------------------------------
+
+
+Overlap
+
+Unique Retrieved Chunks:
+
+Chunk Index: 42
+Cosine: 0.6071
+
+?” I asked him.
+“Analyzing me,” he said. “I’ve only been in this office for two hours.
+I couldn’t even guess what it is that has caught your attention, but I figured
+something would. With Naturals, so
+
+----------------------------------------
+
+Chunk Index: 547
+Cosine: 0.5719
+
+ need of amusement. Or possibly libation.”
+Michael Townsend eased himself down onto the sofa next to me,
+stretching his bad leg out to the side.
+“I’m fine,” I said.
+Michael snorted. “The corners of yo
+
+----------------------------------------
+
+Chunk Index: 45
+Cosine: 0.5966
+
+ be taught. People were people, but for better or
+worse, most days, they were just puzzles to me. Easy puzzles, hard
+puzzles, crosswords, mind-benders, sudoku. There was always an answer,
+and I couldn
+
+----------------------------------------
+
+
+Sentence
+
+Unique Retrieved Chunks:
+
+Chunk Index: 355
+Cosine: 0.7124
+
+With Naturals, something almost always does.”
+Naturals.
+
+----------------------------------------
+
+
+Semantic
+
+Unique Retrieved Chunks:
+
+Chunk Index: 56
+Cosine: 0.5983
+
+I couldn’t even guess what it is that has caught your attention, but I figured
+something would. With Naturals, something almost always does.”
+Naturals. He said the word like he was expecting me to rep
+
+----------------------------------------
+
+Chunk Index: 572
+Cosine: 0.6084
+
+Because Naturals
+work so well as a team, and you’d hate to throw that off?”
+Agent Briggs closed the space between us and brought his face down
+level with mine. “Do you really think that little of me?”
+
+----------------------------------------
+
+
+Recursive
+
+Unique Retrieved Chunks:
+
+Chunk Index: 202
+Cosine: 0.6100
+
+stages. Their agenda was twofold: first, to educate those of us selected to
+participate and hone our natural skills, and second, to use those skills to
+
+----------------------------------------
+
+Chunk Index: 492
+Cosine: 0.5755
+
+posture, facial expressions, and culture-specific instantiations of universal
+phenomenological experiences.’”
+Lia exited the refrigerator with empty hands, shut the door, and
+
+----------------------------------------
+
+Chunk Index: 165
+Cosine: 0.6448
+
+you have a natural aptitude for something that most people could spend a
+lifetime trying to learn.”
+I wondered if when he said most people he was referring at least in
+part to himself.
+
+----------------------------------------
+
+
+ParentChild
+
+Unique Retrieved Chunks:
+
+Chunk Index: 821
+Cosine: 0.5688
+
+ upward. The
+rest of your face is fighting it, like if your lips parted into even a tiny
+smile, it might clear the way for a sob.”
+That was the downside to joining the Naturals program. We were all
+he
+
+----------------------------------------
+
+Chunk Index: 637
+Cosine: 0.5929
+
+ of us with you, because we might see
+something that you can’t.”
+That was the whole reason Briggs had started the Naturals program.
+The whole reason that he’d come to twelve-year-old Dean. No matter h
+
+----------------------------------------
+
+(venv) C:\Users\sarah\OneDrive\Desktop\Internship\Task0005>

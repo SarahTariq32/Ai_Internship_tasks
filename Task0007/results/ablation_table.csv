@@ -1,0 +1,4 @@
+Variant,Faithfulness,Answer Relevancy,Context Precision
+fixed,0.7067,0.6133,0.8467
+parent,0.4733,0.64,0.76
+multi,0.52,0.6133,0.72

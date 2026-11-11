@@ -1,0 +1,342 @@
+venv) C:\Users\sarah\OneDrive\Desktop\Internship\Task0004>python main.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 2217.27it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (87081 > 512). Running this sequence through the model will result in indexing errors
+Batches: 100%|█████████████████████████████████████████████████████████████████████████| 15/15 [00:57<00:00,  3.81s/it]
+==================================================
+PARENT-CHILD CHUNKING
+==================================================
+
+Total Characters: 349104
+
+Total Parent Chunks: 117
+Total Child Chunks: 465
+
+==================================================
+FIRST PARENT CHUNK
+==================================================
+oceanofpdf. com books by jennifer lynn barnes the naturals killer instinct all in oceanofpdf. com copyright © 2013 by jennifer lynn barnes cover photo © 2013 by michael frost cover design by marci senders excerpt from killer instinct copyright © 2014 by jennifer lynn barnes all rights reserved. published by hyperion, an imprint of disney book group. no part of this book may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, or b
+
+==================================================
+FIRST CHILD CHUNK
+==================================================
+oceanofpdf. com books by jennifer lynn barnes the naturals killer instinct all in oceanofpdf. com copyright © 2013 by jennifer lynn barnes cover photo © 2013 by michael frost cover design by marci senders excerpt from killer instinct copyright © 2014 by jennifer lynn barnes all rights reserved. publ
+
+==================================================
+PARENT -> CHILD MAPPING
+==================================================
+Parent 0 contains Child IDs: [0, 1, 2, 3]
+
+==================================================
+EMBEDDINGS
+==================================================
+Embedding Shape: (465, 384)
+
+FAISS Index Built!
+Vectors Stored: 465
+
+==================================================
+RAG TESTING
+==================================================
+
+============================================================
+QUESTION: Who is Cassie?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 47
+
+“ cassie? ” agent locke said, snapping me back to the present. “ right, ” i said. she narrowed her eyes. “ right what? ” “ sorry, ” i told locke. “ could you repeat what you just said? ” she gave me a long, appraising look, then repeated herself. “ i said that walking through a crime scene from a victim ’ s perspective can tell you a lot about the killer. say you go into a victim ’ s house and you
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 72
+
+could reply. by the time he hung up, i already knew what the next words out of his mouth were going to be. “ we ’ ve got another body. ” you you watch the fbi agents scurrying around the crime scene like ants. this particular corpse is not your best work. you killed her last night, and already, her screams have faded from your ears. her face is still recognizable — more or less. you used scissors
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 46
+
+open. her hands are bound. she sees you. then she sees the hair dye, the knife in your left hand, and she realizes — you are the monster. and this time, you deserve to take things slow. oceanofpdf. com hen agent locke showed up monday morning, she had dark circles under her eyes. belatedly, i remembered that while we ’ d been watching tv and playing truth or dare, she and briggs had been out worki
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+The provided context does not contain enough information to fully determine who Cassie is, but it can be inferred that Cassie is the protagonist and seems to be a young woman who is involved in a case with the FBI, specifically with Agent Locke and others. Her mother appears to have been a victim of a crime, possibly a serial killer.
+
+
+
+============================================================
+QUESTION: Who is Dean?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 22
+
+and then strolled up behind dean. “ ninety - eight, ” he said, his tone full of mock pain. “ ninety - nine. one hundred! ” dean closed his eyes for a brief moment, then pushed the barbell up again. his arms shook slightly as he went to set the weight down. michael clearly had no intention of spotting him. to my surprise, sloane pushed past michael, wrapped dainty little hands around the barbell, a
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 21
+
+stuck to the edge of the sink and scattered in a spiral pattern on the tiles. i glanced back down the hallway at the other rooms. the other sets. “ potential crime scene, ” lia corrected. “ for simulations. on this side ” — lia posed like a game show assistant — “ we have interior locations : bathrooms, bedrooms, kitchens, foyers. a couple of miniature — and i do mean miniature — restaurant sets,
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 52
+
+the nine women he ’ d strangled with high - sheen dress hose. reading friedman ’ s words — black ink typed onto the page — would have been bad enough, but the worst part was that after a few pages, i could hear the way he would have talked about the women he ’ d killed : excitement, nostalgia, longing — but no remorse. “ you should sit down. ” i ’ d been expecting someone to join me in the library
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+Dean is a natural profiler, meaning he has a natural ability to understand the way killers think. He is also muscular, lean, and has dark eyes and light hair. He seems to be a private person and has a tendency to keep to himself, often standing with his back to the wall and his face cast in shadows. He is also mentioned to have a complicated personality, with Michael saying "Dean has a temper" and Lia responding "if Dean had a temper, you'd be dead", suggesting that Dean's emotions and behavior can be intense and potentially volatile.
+
+
+
+============================================================
+QUESTION: Who is Agent Locke?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 34
+
+hard. “ did you find her? ” “ we did, ” agent locke replied. “ the question is, would you have? ” she let that sink in for a second, maybe two. “ the first hour is the most crucial, and you ’ ve already lost that. the girl was missing for ninety - seven minutes before you even got the call. you need to figure out who took her and why. most abductions are committed by family members, but her parent
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 36
+
+the photos and forced himself to look at me. studying mutilated bodies was routine. talking to me — apparently, that was hard. “ mo stands for modus operandi, ” he said, and that ’ s as far as he got before he shifted his gaze from my face to a spot just over my left shoulder. “ mode of operation. it refers to the method used by the killer. location, weapon, how they pick victims, how they subdue
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 26
+
+dependency, but c ’ est la vie. ” michael reached up to scratch the side of his face — and oh - so - subtly flipped agent locke off in the process. lia twirled her spoon around her finger, a tiny, ice - cream - laden baton. “ lacey locke, everybody, ” she said, like the fbi agent was a comedian and lia the announcer. locke grinned. “ doesn ’ t judd have a rule about you wearing lingerie in the kit
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+Agent Locke is an FBI agent and a profiler who is working with the main character and other individuals, known as "Naturals", in a program. She is described as experienced and skilled in her job, but also willing to think outside the box and try new approaches. She appears to be in charge of the program and is responsible for guiding and teaching the main character and others.
+
+
+
+============================================================
+QUESTION: Who is Michael?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 21
+
+stuck to the edge of the sink and scattered in a spiral pattern on the tiles. i glanced back down the hallway at the other rooms. the other sets. “ potential crime scene, ” lia corrected. “ for simulations. on this side ” — lia posed like a game show assistant — “ we have interior locations : bathrooms, bedrooms, kitchens, foyers. a couple of miniature — and i do mean miniature — restaurant sets,
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 60
+
+’ re looking for two different killers? ” “ no, ” i said. “ we ’ re only looking for one killer. ” my companions could make observations. sloane could generate relevant statistics. if there ’ d been witness testimony, michael could have told us who was exhibiting signs of guilt. but here, now, looking at the pictures, this was my domain. i would have had to backtrack to explain how i knew, to figu
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 59
+
+was working ten days ago and showed up the next morning with her face half carved off. ” michael looked up from leafing through the file. “ this one ’ s dated three days later, ” i said. “ facial mutilation, numerous superficial cuts to the rest of the body — she died of blood loss. ” “ this would take time, ” sloane said, her face pale. “ hours, not minutes, and according to the autopsy reports,
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+Michael is a deception specialist.
+
+
+
+============================================================
+QUESTION: Why is Cassie important?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 47
+
+“ cassie? ” agent locke said, snapping me back to the present. “ right, ” i said. she narrowed her eyes. “ right what? ” “ sorry, ” i told locke. “ could you repeat what you just said? ” she gave me a long, appraising look, then repeated herself. “ i said that walking through a crime scene from a victim ’ s perspective can tell you a lot about the killer. say you go into a victim ’ s house and you
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 96
+
+up to protect your face, it doesn ’ t matter. you ’ re always alone. that ’ s why you can ’ t mess this up. that ’ s why it has to be perfect from here on out. that ’ s why you have to be perfect. you can ’ t lose cassie. you won ’ t. you ’ ll love her, or you ’ ll kill her, but either way, she ’ s going to be yours. oceanofpdf. com he safe house looked like any other house. dean went in first. he
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 97
+
+to say, not when we were a hair ’ s breadth away from disaster. “ put it down, michael, ” i said. “ please. ” michael ’ s gaze wavered. for the first time, he looked from dean to me, and i saw it the moment he realized that i wasn ’ t afraid of dean. that i was afraid of him. “ you were gone. dean was gone. one of briggs ’ s guns was gone. ” michael took a ragged breath. the guarded expression fel
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+The provided context does not contain enough information to fully answer this question. However, it can be inferred that Cassie is important to the person narrating the part at the end, likely the unsub (unknown subject), as they mention "cassie. lorelai's daughter" and seem to have a fascination or obsession with her.
+
+
+
+============================================================
+QUESTION: What is Agent Locke investigating?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 34
+
+hard. “ did you find her? ” “ we did, ” agent locke replied. “ the question is, would you have? ” she let that sink in for a second, maybe two. “ the first hour is the most crucial, and you ’ ve already lost that. the girl was missing for ninety - seven minutes before you even got the call. you need to figure out who took her and why. most abductions are committed by family members, but her parent
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 79
+
+killer, it was that he always chose his targets for a reason. “ ms. hobbes, i appreciate your personal interest in this case, but that information is above your pay grade. ” i gave the director a look. “ you don ’ t pay me. and if the killer is watching, and you insist on keeping me locked up out of reach, it ’ s going to get worse. ” why couldn ’ t he see that? why couldn ’ t briggs? it was obvio
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 70
+
+. “ bag the packaging, the box, the ribbon, the card, everything — if there ’ s a speck of evidence on any of it, i want to know. starmans, track the box — how it was sent, where it was mailed from, who paid for it. brooks, vance, we need dna on the hair, and we need it yesterday. i don ’ t care who you have to threaten in the lab to get it done, rush it. locke … ” agent locke crossed her arms ove
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+A kidnapping case, specifically the abduction of a girl named Annabelle from a mall, and later, the case of a senator's daughter, Genevieve Ridgerton, who was taken as a deliberate strike at the FBI.
+
+
+
+============================================================
+QUESTION: What connects the victims?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 46
+
+open. her hands are bound. she sees you. then she sees the hair dye, the knife in your left hand, and she realizes — you are the monster. and this time, you deserve to take things slow. oceanofpdf. com hen agent locke showed up monday morning, she had dark circles under her eyes. belatedly, i remembered that while we ’ d been watching tv and playing truth or dare, she and briggs had been out worki
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 36
+
+the photos and forced himself to look at me. studying mutilated bodies was routine. talking to me — apparently, that was hard. “ mo stands for modus operandi, ” he said, and that ’ s as far as he got before he shifted his gaze from my face to a spot just over my left shoulder. “ mode of operation. it refers to the method used by the killer. location, weapon, how they pick victims, how they subdue
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 37
+
+from behind. ” i indicated the girl on the left. “ after she was dead — or close enough to it that she couldn ’ t put up much of a fight — he turned her over. so she could see him. ” this was what agent locke was talking about when she used the phrase deep - seated need. the killer had attacked this girl from behind, but it was important to him — for whatever reason — that she see his face and tha
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+The provided context does not contain enough information to definitively state what connects the victims.
+
+
+
+============================================================
+QUESTION: Why does Briggs worry about Cassie?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 55
+
+to talk about it? ” “ no, ” i said. “ i want to talk about you. ” “ me? ” dean couldn ’ t have sounded more incredulous if he ’ d tried. “ what else is there to say? ” what was there to say? “ i don ’ t care. ” my breath was still ragged from running. i was saying this wrong. “ your father — it doesn ’ t change who you are. ” “ what i am, ” he corrected. “ and yes, it does. why don ’ t you go ask
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 71
+
+. ” locke ’ s voice sounded exactly like mine when i was working my way through a puzzle. “ if cassie wanted in on this case, she ’ d just find a way to keep working it on her own. ” i tried very hard not to look conspicuous — because that was exactly what i ’ d been trying to do. “ cassie, did you or did you not drop this case when i told you to? ” briggs took a step forward, invading my personal
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 61
+
+be psychic. it could have been a coincidence. i should have assumed it was a coincidence. but i didn ’ t. “ i ’ m saying this killer has a very specific type : people who resemble my mother. ” you last night, you woke up in a cold sweat, and the only voice in your head was your father ’ s. the dream seemed real. it always seems real. you could feel the sticky sheets, smell the urine, hear the whis
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+Briggs worries about Cassie because she fits the profile of the killer's victims and the unsub is escalating, which increases the chance that the killer may be watching them and could have seen Cassie. Additionally, Cassie's hair is red, similar to the other victims, and the killer may be playing with them by leaving messages, such as the dyed hair of the last victim.
+
+
+
+============================================================
+QUESTION: What is Cassie's favorite food?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 47
+
+“ cassie? ” agent locke said, snapping me back to the present. “ right, ” i said. she narrowed her eyes. “ right what? ” “ sorry, ” i told locke. “ could you repeat what you just said? ” she gave me a long, appraising look, then repeated herself. “ i said that walking through a crime scene from a victim ’ s perspective can tell you a lot about the killer. say you go into a victim ’ s house and you
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 100
+
+. her face was swollen beyond recognition, and there was blood crusted on her scalp. the skin around her mouth was pink, like someone had just ripped off a strip of tape. she made a mewling sound, halfway between a gargle of water and a moan. “ i told you once, ” agent locke said to me, knife in hand and a wide smile growing on her face, “ that i was only ever a natural at one thing. ” i struggled
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 24
+
+all the rest. the authorities won ’ t notice it ’ s missing when they search her purse. they never do. a lazy smile on your face, you run your fingertips across each one. remembering. savoring. planning. because it ’ s never enough. it ’ s never over. especially now. oceanofpdf. com he next day, i could barely look at lia. the game i ’ d played the night before was one my younger self had played w
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+The provided context does not contain enough information.
+
+
+
+============================================================
+QUESTION: What happened after the final chapter?
+============================================================
+
+--------------------------------------------------
+Retrieved Parent 1
+Parent ID: 49
+
+was theirs. “ we leave at sixteen hundred hours. ” briggs straightened his tie. “ i left work for lia, michael, and sloane. locke, do you have anything for cassie and dean — besides weeding the flower beds? ” he added with a glance at judd. “ i ’ m not leaving them a cold case. ” locke turned to me, almost apologetically. “ you have an incredible amount of raw talent, cass, but you ’ ve spent too
+
+--------------------------------------------------
+Retrieved Parent 2
+Parent ID: 102
+
+to the here and now. “ left where? ” l locke stopped. she hesitated. she looked at me. she saw me. she got ahold of herself, and with her voice still full of venom, she advanced. “ lorelai left. she was eighteen, and i was twelve. she was supposed to protect me. she was supposed to watch out for me. at night, when daddy went away and the monster came out to play, she made him angry. she made him a
+
+--------------------------------------------------
+Retrieved Parent 3
+Parent ID: 101
+
+wondering if i could sink the knife into her before she could get a shot off at me. she was stronger than i was. she was better trained. she was a killer. stalling for time, i knelt next to genevieve. i bent down, bringing my lips to her ear, letting the expression on my face take on a hint of the madness i saw in locke ’ s. then, my voice so low that only genevieve could hear me, i whispered to t
+
+
+--------------------------------------------------
+GENERATED ANSWER
+--------------------------------------------------
+The provided context does not contain enough information.
+
+
+
+(venv) C:\Users\sarah\OneDrive\Desktop\Internship\Task0004>

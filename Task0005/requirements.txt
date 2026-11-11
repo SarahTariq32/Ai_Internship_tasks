@@ -1,0 +1,10 @@
+pypdf
+sentence-transformers
+faiss-cpu
+numpy
+nltk
+python-dotenv
+groq
+tiktoken
+langchain-text-splitters
+scikit-learn

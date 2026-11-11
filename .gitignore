@@ -1,0 +1,39 @@
+
+# Environment variables and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Large archives and temporary files
+*.zip
+*.rar
+*.7z
+*.tmp
+
+# Node
+node_modules/
+dist/
+build/
+
+# .NET
+bin/
+obj/
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

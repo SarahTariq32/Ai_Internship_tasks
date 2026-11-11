@@ -1,0 +1,16 @@
+pypdf
+sentence-transformers
+numpy
+faiss-cpu
+groq
+ragas
+datasets
+pandas
+langchain
+langchain-core
+langchain-community
+langchain-openai
+openai
+scikit-learn
+tqdm
+python-dotenv

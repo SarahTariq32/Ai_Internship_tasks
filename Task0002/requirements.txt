@@ -1,0 +1,8 @@
+sentence-transformers
+numpy
+pandas
+scikit-learn
+faiss-cpu
+torch
+transformers
+huggingface-hub

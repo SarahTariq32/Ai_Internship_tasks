@@ -1,0 +1,122 @@
+[
+    {
+        "question": "Who is the main character of The Alchemist?",
+        "ground_truth": "The main character of The Alchemist is Santiago, a young shepherd.",
+        "answer": "Context not enough to answer.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0
+    },
+    {
+        "question": "What is Santiago's profession at the beginning of the story?",
+        "ground_truth": "Santiago is a shepherd boy at the beginning of the story.",
+        "answer": "Santiago is a shepherd boy at the beginning of the story.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_precision": 0.9
+    },
+    {
+        "question": "Where does Santiago dream of finding treasure?",
+        "ground_truth": "Santiago dreams of finding treasure near the Egyptian pyramids.",
+        "answer": "Context not enough to answer.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.2
+    },
+    {
+        "question": "Who tells Santiago about his Personal Legend?",
+        "ground_truth": "Melchizedek, the King of Salem, tells Santiago about his Personal Legend.",
+        "answer": "The old man, who claims to be the king of Salem, tells Santiago about his Personal Legend.",
+        "faithfulness": 0.0,
+        "answer_relevancy": 1.0,
+        "context_precision": 0.6
+    },
+    {
+        "question": "What are Urim and Thummim?",
+        "ground_truth": "Urim and Thummim are two stones given to Santiago to help him read omens.",
+        "answer": "Urim and Thummim are two stones, one white and one black, that signify 'yes' and 'no' respectively, given to the boy by the old man (who claims to be a king) to help him read omens when he is unable to do so.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5,
+        "context_precision": 1.0
+    },
+    {
+        "question": "How does Santiago help improve the crystal merchant's business?",
+        "ground_truth": "Santiago suggests building a crystal display to attract more customers and increase sales.",
+        "answer": "Santiago suggests building a display case for the crystal to be placed outside, in order to attract people who pass by at the bottom of the hill, thereby potentially increasing the crystal merchant's business.",
+        "faithfulness": 0.0,
+        "answer_relevancy": 1.0,
+        "context_precision": 0.4
+    },
+    {
+        "question": "Who is Fatima?",
+        "ground_truth": "Fatima is a woman from the oasis whom Santiago falls in love with.",
+        "answer": "Fatima is a woman of the desert, the woman Santiago is in love with, and the daughter of the Prophet, according to the invaders who carried her name.",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.8,
+        "context_precision": 0.8
+    },
+    {
+        "question": "What is the Soul of the World?",
+        "ground_truth": "The Soul of the World is the spiritual force that connects all living things and the universe.",
+        "answer": "The Soul of the World is a positive force that governs all things. It's a concept in alchemy that signifies the idea that everything on earth has a soul and is being continuously transformed because the earth is alive. When you want something with all your heart, that's when you are closest to the Soul of the World. It's nourished by people's happiness, and it's a person's only real obligation to realize their Personal Legend.",
+        "faithfulness": 0.8,
+        "answer_relevancy": 1.0,
+        "context_precision": 0.8
+    },
+    {
+        "question": "Why is Fatima willing to let Santiago continue his journey?",
+        "ground_truth": "Fatima believes Santiago should follow his Personal Legend and trusts he will return.",
+        "answer": "Fatima is willing to let Santiago continue his journey because she knows that men have to go away in order to return, and she believes that Santiago must follow his Personal Legend. She also trusts that if she is truly a part of Santiago's dream, he will come back to her one day, as she says \"Maktub\" (\"it is written\"). Additionally, as a woman of the desert, she is used to the idea that men may have to leave, and she finds comfort in the idea that even if they don't return, they become a part of everything, including the Soul of the World.",
+        "faithfulness": 0.2,
+        "answer_relevancy": 1.0,
+        "context_precision": 0.8
+    },
+    {
+        "question": "Where was the treasure actually hidden?",
+        "ground_truth": "The treasure was hidden near the abandoned church in Spain where Santiago first dreamed about it.",
+        "answer": "Context not enough to answer.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.8
+    },
+    {
+        "question": "Who is the Englishman?",
+        "ground_truth": "The Englishman is a traveler studying alchemy and searching for the alchemist.",
+        "answer": "Context not enough to answer.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.2
+    },
+    {
+        "question": "What happens to Santiago when he arrives in Tangier?",
+        "ground_truth": "Santiago is robbed of all his money shortly after arriving in Tangier.",
+        "answer": "When Santiago arrives in Tangier, he is robbed and gets into a situation at a bar where the owner tries to take his money. However, he meets a new friend who helps him out of the situation by pushing the owner aside and pulling Santiago outside. The new friend then takes Santiago's money, intending to buy two camels to get to the Pyramids by the next day.",
+        "faithfulness": 0.8,
+        "answer_relevancy": 1.0,
+        "context_precision": 0.8
+    },
+    {
+        "question": "Why does the crystal merchant refuse to go to Mecca?",
+        "ground_truth": "The crystal merchant fears that fulfilling his dream of visiting Mecca would leave him with nothing else to hope for.",
+        "answer": "The crystal merchant refuses to go to Mecca because he is afraid to leave his crystal shop unattended, as the crystals are delicate things, and he could never bring himself to leave someone in charge of the shop.",
+        "faithfulness": 0.0,
+        "answer_relevancy": 1.0,
+        "context_precision": 0.7
+    },
+    {
+        "question": "What is a Personal Legend?",
+        "ground_truth": "A Personal Legend is a person's true purpose or destiny in life.",
+        "answer": "A Personal Legend is what you have always wanted to accomplish. Everyone, when they are young, knows what their Personal Legend is. It's the dream or desire that originated in the soul of the universe, and it's a person's only real obligation to realize it.",
+        "faithfulness": 0.8,
+        "answer_relevancy": 1.0,
+        "context_precision": 0.8
+    },
+    {
+        "question": "What is the central message of The Alchemist?",
+        "ground_truth": "The novel teaches people to follow their dreams, pursue their Personal Legend, and trust the journey.",
+        "answer": "Context not enough to answer.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.6
+    }
+]

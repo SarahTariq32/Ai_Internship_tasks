@@ -1,0 +1,205 @@
+from pypdf import PdfReader
+from sentence_transformers import SentenceTransformer
+import numpy as np
+import faiss
+import os
+from config import *
+
+model = SentenceTransformer(EMBEDDING_MODEL)
+
+def load_pdfs(folder_path):
+    text = ""
+
+    for file in os.listdir(folder_path):
+        if file.endswith(".pdf"):
+            pdf_path = os.path.join(folder_path, file)
+
+            reader = PdfReader(pdf_path)
+
+            for page in reader.pages:
+                page_text = page.extract_text()
+
+                if page_text:
+                    text += page_text + "\n"
+
+    return text
+
+
+def create_parent_chunks(text):
+    parents = []
+
+    start = 0
+
+    while start < len(text):
+        end = start + PARENT_CHUNK_SIZE
+
+        parents.append(text[start:end])
+
+        start += PARENT_CHUNK_SIZE - CHUNK_OVERLAP
+
+    return parents
+
+
+def create_child_chunks(parent_chunks):
+
+    child_chunks = []
+
+    parent_mapping = []
+
+    for parent_id, parent in enumerate(parent_chunks):
+
+        start = 0
+
+        while start < len(parent):
+
+            end = start + CHILD_CHUNK_SIZE
+
+            child = parent[start:end]
+
+            child_chunks.append(child)
+
+            parent_mapping.append(parent_id)
+
+            start += CHILD_CHUNK_SIZE - CHUNK_OVERLAP
+
+    return child_chunks, parent_mapping
+
+
+def create_embeddings(texts):
+
+    embeddings = model.encode(
+    	texts,
+    	normalize_embeddings=True,
+    	show_progress_bar=False
+    ).astype("float32")
+
+return embeddings
+
+
+def build_faiss_index(embeddings):
+
+    dimension = embeddings.shape[1]
+
+    index = faiss.IndexFlatIP(dimension)
+
+    index.add(embeddings)
+
+    return index
+
+
+def search_index(index, query, top_k):
+
+    query_embedding = create_embeddings([query])
+
+    scores, indices = index.search(
+        query_embedding,
+        top_k
+    )
+
+    return scores[0], indices[0]
+
+from groq import Groq
+
+from config import *
+from retriever import retrieve_context
+
+client = Groq(
+    api_key=GROQ_API_KEY
+)
+
+
+class ChatBot:
+
+    def __init__(self):
+
+        self.history = []
+
+    def get_history(self):
+
+        if HISTORY_STRATEGY == 1:
+            return self.history[-N_MESSAGES:]
+
+        return self.history
+
+    def ask(
+            self,
+            question,
+            index,
+            child_chunks,
+            parent_chunks,
+            parent_mapping
+    ):
+
+        context = retrieve_context(
+            question,
+            index,
+            child_chunks,
+            parent_chunks,
+            parent_mapping
+        )
+        if not context.strip():
+
+            return "Context not enough to answer."
+
+        history = self.get_history()
+
+        history_text = ""
+
+        for role, message in history:
+
+            history_text += f"{role}: {message}\n"
+
+        prompt = f"""
+You are a helpful PDF chatbot.
+
+Answer using only the retrieved context.
+
+If the context does not contain enough information,
+reply exactly:
+
+Context not enough to answer.
+
+Do not make up information.
+
+Conversation History:
+
+{history_text}
+
+Retrieved Context:
+
+{context}
+
+Question:
+
+{question}
+
+If the answer is not present in the context,
+reply exactly:
+
+Context not enough to answer.
+"""
+
+        response = client.chat.completions.create(
+
+            model=MODEL_NAME,
+
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
+
+        )
+
+        answer = response.choices[0].message.content
+
+        self.history.append(
+            ("User", question)
+        )
+
+        self.history.append(
+            ("Bot", answer)
+        )
+
+        return answer

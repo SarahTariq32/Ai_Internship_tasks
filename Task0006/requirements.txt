@@ -1,0 +1,14 @@
+groq
+
+pypdf
+
+sentence-transformers
+torch
+
+faiss-cpu
+
+numpy
+
+python-dotenv
+
+tqdm

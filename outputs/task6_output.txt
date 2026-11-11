@@ -1,0 +1,51 @@
+(venv) C:\Users\sarah\OneDrive\Desktop\Internship\Task0006>python main.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 2893.15it/s]
+========================================
+        PDF CHATBOT
+========================================
+
+Loading PDF(s)...
+Creating parent chunks...
+Creating child chunks...
+Creating embeddings...
+Building FAISS index...
+
+Initialization Complete!
+
+Conversation Mode:
+Full conversation history
+
+Type 'exit' to quit.
+----------------------------------------
+
+You: Who is Fatima?
+
+Bot:
+Fatima is a woman of the desert, and the boy has fallen in love with her. She is also referred to as "the Prophet's daughter" and is someone the boy met at an oasis. The alchemist mentions that she already has her treasure, which is the boy.
+
+You: Where did Santiago meet her?
+
+Bot:
+Santiago met Fatima at the oasis.
+
+You: What was happening in the story at that time?
+
+Bot:
+Context not enough to answer.
+
+You: What decision did he make afterward?
+
+Bot:
+He decided to leave and had the money to buy his sheep and the merchant had the money to go to Mecca, but the merchant said he was not going to go to Mecca and the boy was not going to buy his sheep.
+
+You: what was his profession?
+
+Bot:
+He was a shepherd.
+
+You: exit
+
+Goodbye!
+
+(venv) C:\Users\sarah\OneDrive\Desktop\Internship\Task0006>
